@@ -1,0 +1,5 @@
+PHP
+
+* Tipe data number
+  - int = bil desimal(10), hexadecimal,(base16), octa(base8), binary(b2)
+  - float = bilangan pecahan
