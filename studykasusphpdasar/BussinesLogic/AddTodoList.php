@@ -4,11 +4,11 @@
 function addTodoList(string $todo)
 {
 
-   global $todolist; 
+   global $todoList; 
    
-   $number = sizeof($todolist) + 1 ;
+   $number = sizeof($todoList) + 1 ;
 
-   $todolist[$number] = $todo ;
+   $todoList[$number] = $todo ;
 
 }
  
