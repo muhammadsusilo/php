@@ -5,6 +5,9 @@ require_once "../BussinesLogic/ShowTodoList.php";
 
 $todolist[1] = "cara sukses";
 $todolist[2] = "persisten";
-$todolist[3] = "konsisten";
+$todolist[3] = "konsisten\n";
 
+showTodoList();
+showTodoList();
+showTodoList();
 showTodoList();
