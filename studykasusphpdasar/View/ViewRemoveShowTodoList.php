@@ -1,7 +1,7 @@
 <?php
 
-require_once "../Helper/Input.php";
-require_once "../BussinesLogic/RemoveTodoList.php";
+require_once __DIR__ . "/../Helper/Input.php";
+require_once __DIR__ . "/../BussinesLogic/RemoveTodoList.php";
 
 function viewRemoveTodoList()
 {

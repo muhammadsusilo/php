@@ -1,10 +1,10 @@
 <?php
 
-require_once "../Model/Todolist.php";
-require_once "../BussinesLogic/ShowTodoList.php";
-require_once "../View/ViewAddTodoList.php";
-require_once "../View/ViewRemoveShowTodoList.php";
-require_once "../Helper/Input.php";
+require_once __DIR__ . "/../Model/Todolist.php";
+require_once __DIR__ . "/../BussinesLogic/ShowTodoList.php";
+require_once __DIR__ . "/../View/ViewAddTodoList.php";
+require_once __DIR__ . "/../View/ViewRemoveShowTodoList.php";
+require_once __DIR__ . "/../Helper/Input.php";
 
 function viewShowTodoList()
 {
