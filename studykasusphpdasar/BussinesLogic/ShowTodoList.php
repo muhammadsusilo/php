@@ -3,11 +3,11 @@
 // Memampilkan todo
 function showTodoList(){
 
-   global $todolist;
+   global $todoList;
 
    echo "TODOLIST";
 
-   foreach ($todolist as $number => $value){
+   foreach ($todoList as $number => $value){
       echo "$number . $value";
    }
    
