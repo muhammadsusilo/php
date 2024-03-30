@@ -5,7 +5,7 @@ function showTodoList(){
 
    global $todoList;
 
-   echo "TODOLIST";
+   echo "TODOLIST\n";
 
    foreach ($todoList as $number => $value){
       echo "$number . $value";
