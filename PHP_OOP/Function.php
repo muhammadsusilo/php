@@ -6,6 +6,10 @@ $person = new Person();
 $person->name = "Budi";
 $person->sayHello("MSusilo");
 
-$person = new Person();
-$person->name = "Silo";
-$person->sayHello(null);
+$aku = new Person();
+$aku->name = "Silo";
+$aku->sayHello(null);
+
+$person->info();
+$aku->info();
+

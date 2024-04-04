@@ -2,6 +2,8 @@
 
 class Person
 {
+   const AUTHOR = "Belajar di Programmer Zaman Now";
+
    var string $name;
    var ?string $address = null;
    var string $country = "Jawa Tengah - Indonesia";
@@ -13,5 +15,10 @@ class Person
       }else{
          echo "Hi $name, my Name is $this->name" . PHP_EOL;
       }
+   }
+
+   function info()
+   {
+      echo "Author : " . self::AUTHOR . PHP_EOL;
    }
 }
