@@ -2,7 +2,7 @@
 
 require_once "data/Person.php";
 
-$person = new Person();
+$person = new Person("Silo","Tegal");
 
 var_dump($person);
 
