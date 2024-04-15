@@ -6,17 +6,45 @@ class Zero
    private array $properties = [];
    public function __get($name)
    {
-      echo "Access property $name" . PHP_EOL;
-      return "CONTOH";
+      return $this->properties[$name];
 
    }
    
    public function __set($name, $value)
    {
-      echo"Set access property $name with value" . PHP_EOL;
+      $this->properties[$name] = $value;
    }
+
+   public function __isset($name): bool
+   {
+      return isset($this->properties[$name]);
+   }
+
+   public function __unset($name)
+   {
+      unset($this->properties[$name]);
+   }
+
+   public function __call($name, $arguments)
+   {
+      $join = join(",", $arguments);
+      echo "Call function $name with arguments $join" . PHP_EOL;
+   }
+
+   public static function __callStatic($name, $arguments)
+   {
+      $join = join(",", $arguments);
+      echo "Call static function $name with arguments $join" . PHP_EOL;
+   }
+
 }
 
 $zero = new Zero();
-// echo $zero->firstName . PHP_EOL;
-$zero->firstName = "Silo";
+$zero->firstName = "Muhammad";
+$zero->lastName = "Susilo";
+
+echo "FirstName : $zero->firstName" . PHP_EOL;
+echo "LastName : $zero->lastName" . PHP_EOL;
+
+$zero->sayHello("Muhammad","Susilo");
+Zero::sayHello("Muhammad", "Susilo");
