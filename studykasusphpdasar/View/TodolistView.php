@@ -33,7 +33,7 @@ use Helper\InputHelper;
                echo "Pilihan tidak di mengerti" . PHP_EOL;
             }
          }
-         echo "Terima Kasih \nSampai jumpa lagi";
+         echo "Terima Kasih \nSampai jumpa lagi". PHP_EOL;
       }
       function addTodolist(): void
       {
@@ -41,7 +41,7 @@ use Helper\InputHelper;
          $todo = InputHelper::input(" Todo (x untuk batal)");
 
          if ($todo == "x" ){
-            echo "anda Membatalkannya";
+            echo "anda Membatalkannya". PHP_EOL;
          }else {
             $this->todolistService->addTodolist($todo);
          }
@@ -50,7 +50,15 @@ use Helper\InputHelper;
 
       function removeTodolist(): void
       {
+         echo "Menghapus Todolist" . PHP_EOL;
+
+         $pilihan = InputHelper::input("Nomor (x untuk batal)");
          
+         if($pilihan == "x"){
+            echo "batal menghapus todo". PHP_EOL;
+         }else{
+            $this->todolistService->removeTodolist($pilihan);
+         }
       }
    }
 }
