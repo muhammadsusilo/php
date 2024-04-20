@@ -2,7 +2,6 @@
 
 require_once __DIR__ . "/GetConnection.php";
 
-
 $connection = getConnection();
 
 $sql = "SELECT id,name,email FROM customers";
@@ -19,9 +18,6 @@ foreach ($statement as $row) {
    echo "name : $name" . PHP_EOL;
    echo "email : $email" . PHP_EOL;
 }
-
-
-
 
 $connection = null;
 
