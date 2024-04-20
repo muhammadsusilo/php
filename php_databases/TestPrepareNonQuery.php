@@ -14,6 +14,5 @@ $statement->bindParam("password", $password);
 $statement->execute();
 
 
-
 $connection = null;
 
