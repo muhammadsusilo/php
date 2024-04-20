@@ -4,18 +4,17 @@ require_once __DIR__ . "/GetConnection.php";
 
 $connection = getConnection();
 
-$username = $connection->quote("admin'; #");
-$password = $connection->quote("salah");
+$username = "silo";
+$password = "rahasia";
 
-$sql= "SELECT * FROM admin where username =$username and password = $password";
-
-echo $sql . PHP_EOL;
-$statement = $connection->query($sql);
+$sql = "SELECT * FROM admin where username =? and password =?";
+$statement = $connection->prepare($sql);
+$statement->execute([$username, $password]);
 
 $success= false;
 $find_user = null;
 foreach ($statement as $row){
-   // succes
+   // suskses
     $success = true;
     $find_user = $row["username"];
 }
@@ -26,5 +25,5 @@ if ($success){
    echo "Gagal login" . PHP_EOL;
 }
 
-
 $connection = null;
+
