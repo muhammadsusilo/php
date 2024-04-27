@@ -3,7 +3,6 @@
 namespace Config {
 
    class Database{
-
       static function getConnection(): \PDO
       {
          $host = "localhost";
@@ -12,9 +11,8 @@ namespace Config {
          $username = "root";
          $password = "root";
 
-         return new \PDO("mysql:host=$host:$port;dbnames=$database ",$username,$password);
+         return new \PDO("mysql:host=$host;port=$port;dbname=$database ",$username,$password);
       }
    }
-
 }
 
