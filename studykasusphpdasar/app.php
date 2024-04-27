@@ -4,6 +4,7 @@ require_once __DIR__ . "/Helper/InputHelper.php";
 require_once __DIR__ . "/Repository/TodolistRepository.php";
 require_once __DIR__ . "/Service/TodolistService.php";
 require_once __DIR__ . "/View/TodolistView.php";
+require_once __DIR__ . "/Config/Database.php";
 
 // use Entity\Todolist;
 use Repository\TodolistRepositoryImpl;
@@ -12,7 +13,8 @@ use View\TodolistView;
 
 echo "Aplikasi Todolist" ;
 
-$todolistRepository = new TodolistRepositoryImpl();
+$connection = \Config\Database::getConnection();
+$todolistRepository = new TodolistRepositoryImpl($connection);
 $todolistService = new TodolistServiceImpl($todolistRepository);
 $todolistView = new TodolistView($todolistService);
 
