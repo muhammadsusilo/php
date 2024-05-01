@@ -4,7 +4,7 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Muhammadsusilopzn\\PhpComposer\\": "src/"
+            "Muhammadsusilopzn\\": "src/"
         }
     },
     "authors": [
@@ -13,5 +13,7 @@
             "email": "muhammadsusilo43@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "monolog/monolog": "3.6.0"
+    }
 }

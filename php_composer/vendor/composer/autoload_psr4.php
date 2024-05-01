@@ -6,5 +6,7 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Muhammadsusilopzn\\PhpComposer\\' => array($baseDir . '/src'),
+    'Psr\\Log\\' => array($vendorDir . '/psr/log/src'),
+    'Muhammadsusilopzn\\' => array($baseDir . '/src'),
+    'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
 );
