@@ -1,0 +1,19 @@
+{
+    "name": "muhammadsusilopzn/php_composer_hello",
+    "description": "Library Composer Hello",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Muhammadsusilopzn\\PhpComposerHello\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Muhammad Susilo",
+            "email": "muhammadsusilo43@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    }
+}
