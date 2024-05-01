@@ -1,0 +1,17 @@
+{
+    "name": "muhammadsusilopzn/php_composer",
+    "description": "Belajar PHP Composer",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Muhammadsusilopzn\\PhpComposer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Muhammad Susilo",
+            "email": "muhammadsusilo43@gmail.com"
+        }
+    ],
+    "require": {}
+}
