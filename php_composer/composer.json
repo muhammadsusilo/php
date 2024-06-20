@@ -13,6 +13,10 @@
             "email": "muhammadsusilo43@gmail.com"
         }
     ],
+    "repositories": [{
+      "type" : "vcs"
+    //   "url" : "" link github
+    }],
     "require": {
         "monolog/monolog": "3.6.0"
     }

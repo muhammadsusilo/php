@@ -1,0 +1,11 @@
+cara bikin komposer
+
+* composer init
+* ketik package name
+* description
+* author
+* dll
+
+setelah ada perubahan di comoser
+* composer update
+* composer dump-autoload
