@@ -1,0 +1,2 @@
+penamaan class controller selalu diakhiri dengan nama Controller,
+misal UserController, ProdukC
